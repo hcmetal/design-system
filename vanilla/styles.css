@@ -1,0 +1,29 @@
+ul {
+  padding: 0;
+}
+
+li {
+  margin: 16px 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+div.tag-text {
+  flex-basis: 120px;
+}
+
+.text-content-s {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.color-bg-fox {
+  background-color: HSL(12, 80%, 60%);
+}
