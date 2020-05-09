@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <h2>Spacing and sizing system</h2>
-      <div id="spacing-and-sizing-placeholder"></div>
-      <template id="spacing-and-sizing-list-item">
-        <li>
-          <div class="tag-text text-content-s">
-            <span class="step-result bold">4px</span>
-            <span class="step-explain">(16 x 0.25)</span>
+    <header class="header">
+      <h2 class="header__title">HCDS - Vanilla Stack</h2>
+    </header>
+
+    <section class="sub-system">
+      <h2 class="sub-system__title">Spacing and sizing system</h2>
+      <div class="sub-system__graph-placeholder spacing-and-sizing"></div>
+      <template class="sub-system__graph-template spacing-and-sizing">
+        <li class="sub-system__step-item">
+          <div class="sub-system__step-text">
+            <span class="sub-system__step-result">4px</span>
+            <span class="sub-system__step-scale">(16 x 0.25)</span>
           </div>
-          <div class="step-bar color-bg-fox"></div>
+          <div class="sub-system__step-bar"></div>
         </li>
       </template>
-    </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__credit">Inspired by Refactoring UI</p>
+    </footer>
   </body>
   <script src="main.js"></script>
 </html>
