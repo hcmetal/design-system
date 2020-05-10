@@ -2,29 +2,27 @@ console.log("yo");
 
 // Generate spacing and sizing graph
 const spacingAndSizingPlaceholder = document.querySelector(
-  ".sub-system__graph-placeholder.spacing-and-sizing"
+  ".spacing-and-sizing__list-placeholder"
 );
 
 function createSpacingAndSizingListWithTemplate(steps) {
   const ul = document.createElement("ul");
-  ul.classList.add("sub-system__graph-list");
+  ul.classList.add("spacing-and-sizing__step-list");
 
-  const template = document.querySelector(
-    ".sub-system__graph-template.spacing-and-sizing"
-  );
+  const template = document.querySelector(".spacing-and-sizing__step-template");
 
   steps.forEach((step) => {
     const listItem = document.importNode(template.content, true);
 
-    listItem.querySelector(".sub-system__step-result").textContent = `${
+    listItem.querySelector(".spacing-and-sizing__step-result").textContent = `${
       16 * step
     }px`;
 
     listItem.querySelector(
-      ".sub-system__step-scale"
+      ".spacing-and-sizing__step-scale"
     ).textContent = `(16 x ${step})`;
 
-    listItem.querySelector(".sub-system__step-bar").style.width = `${
+    listItem.querySelector(".spacing-and-sizing__step-bar").style.width = `${
       16 * step
     }px`;
 

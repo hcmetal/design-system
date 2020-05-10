@@ -1,3 +1,16 @@
+body {
+  color: HSL(212, 56%, 16%);
+  background-color: HSL(210, 38%, 97%);
+}
+
+.header {
+  padding: 0 24px;
+}
+
+.main {
+  padding: 0 24px;
+}
+
 .footer {
   font-size: 12px;
 }
@@ -6,29 +19,48 @@
   text-align: center;
 }
 
-.sub-system__graph-list {
-  padding: 0;
+.sub-system {
+  margin-bottom: 96px;
 }
 
-.sub-system__step-item {
-  margin: 16px 0;
+.sub-system__title {
+  font-size: 24px;
+  font-weight: 400;
+  color: HSL(212, 18%, 35%);
+}
+
+.gem__list {
+  padding: 0 24px;
+  /* list-style-type: none; */
+}
+
+.gem__item {
+  margin: 36px 0;
+}
+
+.spacing-and-sizing__step-list {
+  padding: 0;
   list-style-type: none;
+}
+
+.spacing-and-sizing__step-item {
+  margin: 16px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: stretch;
 }
 
-.sub-system__step-text {
-  flex-basis: 150px;
-  font-size: 16px;
+.spacing-and-sizing__step-text {
+  flex-basis: 140px;
+  font-size: 14px;
   line-height: 24px;
 }
 
-.sub-system__step-result {
-  font-weight: 700;
+.spacing-and-sizing__step-result {
+  font-weight: 600;
 }
 
-.sub-system__step-bar {
+.spacing-and-sizing__step-bar {
   background-color: HSL(12, 80%, 60%);
 }
