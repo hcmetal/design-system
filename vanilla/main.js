@@ -1,5 +1,45 @@
 console.log("yo");
 
+// Generate gem list
+const gemPlaceholder = document.querySelector(".gem__placeholder");
+
+function createGemList(gems) {
+  const items = gems.map((gem) => {
+    return `<li class="gem__item">${gem}</li>`;
+  });
+
+  // console.log(items);
+
+  gemPlaceholder.innerHTML = `<ul class="gem__list">${items.join("")}</ul>`;
+}
+
+const gems = [
+  `Starting from Scratch`,
+  ` - Start with a feature, not a layout`,
+  ` - Details comes later`,
+  ` - Don't design too much`,
+  ` - Choose a personality`,
+  ` - Limit your choices`,
+  `Hierarchy is Everything`,
+  ` - Not all elements are equal`,
+  ` - Size isn't everything`,
+  ` - Don't use grey text on colored backgrounds`,
+  ` - Emphasize by de-emphasizing`,
+  ` - Labels are a last resort`,
+  ` - Separate visual hierarchy from document hierarchy`,
+  ` - Balance weight and contrast`,
+  ` - Semantics are secondary`,
+  `Layout and Spacing`,
+  ` - Start with too much white space`,
+  ` - Establish a spacing and sizing system`,
+  ` - You don't have to fill the whole screen`,
+  ` - Grids are overrated`,
+  ` - Relative sizing doesn't scale`,
+  ` - Avoid ambiguous spacing`,
+];
+
+createGemList(gems);
+
 // Generate spacing and sizing graph
 const spacingAndSizingPlaceholder = document.querySelector(
   ".spacing-and-sizing__list-placeholder"

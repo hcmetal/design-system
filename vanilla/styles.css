@@ -20,7 +20,7 @@ body {
 }
 
 .sub-system {
-  margin-bottom: 96px;
+  margin: 96px 0;
 }
 
 .sub-system__title {
@@ -31,7 +31,7 @@ body {
 
 .gem__list {
   padding: 0 24px;
-  /* list-style-type: none; */
+  list-style-type: none;
 }
 
 .gem__item {
