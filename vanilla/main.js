@@ -36,6 +36,15 @@ const gems = [
   ` - Grids are overrated`,
   ` - Relative sizing doesn't scale`,
   ` - Avoid ambiguous spacing`,
+  `Designing Text`,
+  ` - Establish a type scale`,
+  ` - Use good fonts`,
+  ` - Keep your line length in check`,
+  ` - Baseline, not center`,
+  ` - Line-height is proportional`,
+  ` - Not every link needs a color`,
+  ` - Align with readability in mind`,
+  ` - Use letter-spacing effectively`,
 ];
 
 createGemList(gems);
