@@ -45,11 +45,16 @@ const gems = [
   ` - Not every link needs a color`,
   ` - Align with readability in mind`,
   ` - Use letter-spacing effectively`,
+  `Working with Images`,
+  ` - Use good photos`,
+  ` - Text needs consistent contrast`,
+  ` - Everything has an intended size`,
+  ` - Beware user-uploaded content`,
 ];
 
 createGemList(gems);
 
-// Generate spacing and sizing graph
+// Generate spacing and sizing list
 const spacingAndSizingPlaceholder = document.querySelector(
   ".spacing-and-sizing__list-placeholder"
 );
@@ -57,6 +62,7 @@ const spacingAndSizingPlaceholder = document.querySelector(
 function createSpacingAndSizingListWithTemplate(steps) {
   const ul = document.createElement("ul");
   ul.classList.add("spacing-and-sizing__step-list");
+  ul.classList.add("step-list");
 
   const template = document.querySelector(".spacing-and-sizing__step-template");
 
@@ -101,3 +107,36 @@ const spacingAndSizingSteps = [
 ];
 
 createSpacingAndSizingListWithTemplate(spacingAndSizingSteps);
+
+// Generate type scale list
+const typeScalePlaceholder = document.querySelector(
+  ".type-scale__list-placeholder"
+);
+
+function createTypeScaleListWithTemplate(steps) {
+  const ul = document.createElement("ul");
+  ul.classList.add("type-scale__step-list");
+  ul.classList.add("step-list");
+
+  const template = document.querySelector(".type-scale__step-template");
+
+  steps.forEach((step) => {
+    const listItem = document.importNode(template.content, true);
+
+    listItem.querySelector(
+      ".type-scale__step-result"
+    ).textContent = `${step}px`;
+
+    listItem.querySelector(
+      ".type-scale__step-sample-text"
+    ).style.fontSize = `${step}px`;
+
+    ul.appendChild(listItem);
+  });
+
+  typeScalePlaceholder.replaceWith(ul);
+}
+
+const typeScaleSteps = [12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72];
+
+createTypeScaleListWithTemplate(typeScaleSteps);
