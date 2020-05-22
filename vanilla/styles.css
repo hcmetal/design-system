@@ -1,3 +1,42 @@
+/* Colors */
+.primary-background-100 {
+  background-color: HSL(20, 80%, 85%);
+}
+
+.primary-background-200 {
+  background-color: HSL(18, 80%, 77%);
+}
+
+.primary-background-300 {
+  background-color: HSL(16, 80%, 68%);
+}
+
+.primary-background-400 {
+  background-color: HSL(14, 80%, 59%);
+}
+
+.primary-background-500 {
+  background-color: HSL(12, 80%, 50%);
+}
+
+.primary-background-600 {
+  background-color: HSL(10, 80%, 42%);
+}
+
+.primary-background-700 {
+  background-color: HSL(8, 80%, 33%);
+}
+
+.primary-background-800 {
+  background-color: HSL(6, 80%, 24%);
+}
+
+.primary-background-900 {
+  background-color: HSL(4, 80%, 15%);
+}
+
+/* Components */
+
 body {
   color: HSL(212, 56%, 16%);
   background-color: HSL(210, 38%, 97%);
@@ -68,4 +107,37 @@ body {
 .type-scale__step-sample-text {
   width: 1000px;
   white-space: nowrap;
+}
+
+.color-palette__hue-wheel {
+  margin: 48px 0;
+  height: 400px;
+  width: 400px;
+  background-color: HSL(0, 0%, 100%);
+  background-image: url("./image/hue-wheel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.color-palette__color-category {
+  margin-top: 48px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.color-category-name {
+  width: 200px;
+}
+
+.shade-item {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  margin: 0 4px;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 2px HSLA(0, 0%, 0%, 0.1),
+    0px 2px HSLA(0, 0%, 100%, 0.15);
 }
